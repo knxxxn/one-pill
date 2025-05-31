@@ -23,9 +23,9 @@
 - 캘린더를 통해 해당 처방전의 복용 기간을 시각적으로 확인할 수 있다
 
 ## 기술 스택
-프론트 - 리엑트
-백 - 스프링부트
-OCR - 플라스크, Google Vision AI
-Open api - kakao map api, 식품의약품안전처-의약품개요정보(e약은요)
+- 프론트 : 리엑트
+- 백 : 스프링부트
+- OCR : 플라스크, Google Vision AI
+- Open api : kakao map api, 식품의약품안전처-의약품개요정보(e약은요)
 
 

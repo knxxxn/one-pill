@@ -1,0 +1,17 @@
+package com.example.PILL.dto.pill;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+import java.util.List;
+
+@Getter
+@AllArgsConstructor
+public class PerscriptionResDto {
+
+    private Long perscriptionId;
+
+    private String perscriptionImage;
+
+    private List<String> medicineNames;
+}

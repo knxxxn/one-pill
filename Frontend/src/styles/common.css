@@ -1,0 +1,131 @@
+:root {
+  /* 색상 변수 */
+  --primary-color: #00aa9d;
+  --secondary-color: #282c34;
+  --background-color: #f5f5f5;
+  --text-color: #333333;
+  --gray-light: #e0e0e0;
+  --gray-medium: #9e9e9e;
+  --white: #ffffff;
+  --focus-color: #4a90e2;
+  
+  /* 폰트 크기 */
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  
+  /* 여백 */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  
+  /* 반경 */
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+}
+
+/* 전역 스타일 */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.5;
+  color: var(--text-color);
+}
+
+/* 버튼 공통 스타일 */
+.button {
+  min-height: 44px;
+  padding: 8px 16px;
+  border-radius: var(--border-radius-md);
+  border: none;
+  font-size: var(--font-size-md);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.button-primary {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.button-secondary {
+  background-color: var(--gray-light);
+  color: var(--text-color);
+}
+
+/* 입력 필드 공통 스타일 */
+.input {
+  width: 100%;
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid var(--gray-light);
+  border-radius: var(--border-radius-md);
+  font-size: var(--font-size-md);
+}
+
+/* 입력 필드 포커스 스타일 */
+input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--focus-color);
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+}
+
+/* 카드 스타일 */
+.card {
+  background: var(--white);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-md);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* 가격 스타일 */
+.price {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+/* 목록 아이템 스타일 */
+.list-item {
+  padding: var(--spacing-md);
+  border-bottom: 1px solid var(--gray-light);
+}
+
+/* 헤더 스타일 */
+.header {
+  height: 56px;
+  padding: 0 var(--spacing-md);
+  background-color: var(--white);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* 검색바 스타일 */
+.search-bar {
+  padding: var(--spacing-sm) var(--spacing-md);
+  background-color: var(--white);
+}
+
+/* 알약 상세 정보 스타일 */
+.pill-detail {
+  padding: var(--spacing-md);
+}
+
+.pill-detail-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* 처방전 목록 스타일 */
+.prescription-list {
+  padding: var(--spacing-md);
+}
+
+.prescription-item {
+  margin-bottom: var(--spacing-md);
+}

@@ -59,9 +59,24 @@ src/main/java/com/example/PILL/config/jwt/JwtAuthenticationToken.java
 src/main/java/com/example/PILL/config/jwt/JwtAuthenticationTokenFilter.java
 src/test/java/com/example/PILL/ApiExplorer.java
 
-build.gradle
+# Environment and Configuration
+.env
+*.env
+application-*.properties
+application-*.yml
+application-*.yaml
 
-# Gradle
+# API Keys and Credentials
+**/config/credentials/*
+**/config/keys/*
+**/config/secrets/*
+
+# Logs
+logs/
+*.log
+
+# Build
+build.gradle
 .gradle/
 build/
 
